@@ -1,5 +1,5 @@
 {
-  "name": "design-sharing",
+  "name": "catlive",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -7,19 +7,17 @@
     "name": "",
     "email": ""
   },
-  "repository": "/design-sharing",
+  "repository": "/catlive",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src"
+    "dev": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress dev src",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider vuepress build src"
   },
   "license": "MIT",
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "vuepress": "^1.5.3"
   },
   "dependencies": {
-    "hexo-helper-live2d": "^3.1.1",
-    "vuepress-plugin-cat": "^1.0.3",
-    "vuepress-plugin-helper-live2d": "^1.0.2",
-    "vuepress-plugin-zenlive2d-cat": "^1.1.1"
+    "vuepress-plugin-cat": "^1.0.3"
   }
 }
