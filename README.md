@@ -1,6 +1,8 @@
 ```bash
 yarn install
 
+yarn add cross-env --dev
+
 yarn dev
 
 yarn build 
